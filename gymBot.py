@@ -14,7 +14,8 @@ Basic Echobot example, repeats messages.
 Press Ctrl-C on the command line or send a signal to the process to stop the
 bot.
 """
-
+import pip
+pip.main(["install", "gspread"])
 from datetime import date
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
