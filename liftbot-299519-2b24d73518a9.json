@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "liftbot-299519",
+  "private_key_id": "2b24d73518a9afae4e1430e320a50f893a30aa03",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCzVPoU/hLMovYZ\nJ1wNJU0nafS9izZkXJzBJU9MYxtc1HMGGQAegl2+rH0EQ/UPvz5be65jgCr1nrhL\nIooEbHhDBpQE00Wt9pxVh+L05bvtXQZM54xcvoPbk7e119RV36hvnN7Bly968mPX\nLiMEpz25EJPSuLbmwF1K1cibL7fvzvMcjMCCYdf6OucwZpWPEWMpAixCoXN1cbqq\n6vcYN3AFwR7P94aqJ8MOcMQGFsRV75WPWfISQbWMUjjrN/VKW4dQ3yLJGh6VjFgB\njS//XWcCfVvszODhIhd6hcvarGkO8wZy7ztEPg/Ip8Oy6DyAOimif21PV0Qi+pza\nwYivGXxRAgMBAAECggEAAMPg7chAPQiId4bCFynEtKF4ensOtDqrbg0KU7N8DUc4\nRutCI38vpnW+sk8Wa3bnzZTfY3wLYuEmnOZ0s4xhbnrHlKYwnsuFsv05kA0vYjXC\nhj86K3aiIiSVFPTq6mNiCPjgv+9008fXOnavTlCm3CRolw5z9FPXig9Ts+rOFHs6\nGUqZtnQa8eA/LJJhuBznTkSkb/KDlvDn6GETsNj61eqawjfsxW9wkYhGsDJNQVwg\nUkS2i8QJ8/Mnq+RG9h3n3oIlBhFtKlp8C0b57UzCWF4GGiQ6MktHFJ/RIV3ndwh1\nLPF6xlEBjpoA3Se/BvwgLViCSoyFy5wvDHahd4hiSQKBgQDy+C3a/aiSy1bDrYZT\nGvBT/jyePMuBumm0udvtQZindmnaJjm4QOyaE5e1Vgw8nlLaA+AB59SzRLwc3vzY\npdKKHW4qWbIApuFNJ1UPrf+nNkQo0zsWgUDzZK+DrUkrd32tszWneLZ6omWYQqcw\nStjVHyrVJkPQFQfkcT0BQ8d2uQKBgQC88xgOGEmrvNlV6oGyCVwR3vI6DpPhEErh\nLLIMxLnaKgC03GJhBVySofTkmWQuE/VfD2SX8+AMeZyi0G0kSu/Eody+Gv8TuEln\nxB0pGxDxO+vd65tSptr2K6yfNir55riPbU0eVqjFdWUa7bFfxCyngea41kc1OGyR\nI6j7/0/mWQKBgQCuZPSE+wzEUK82RJblj7BwmUtpSLnJo8O7tKvm3+5yRMw1iLpl\nRjSNYwLBZcHiwME3OxDOTVieU/exwVw7JMq51+X6/+aEEUQl3NVxK7MUkh7aLsN6\no8u658oS+Y5LZLkQtFEOo9ZWr7m8UBswzohUcMqNs6l48Z94mM7w2XWSAQKBgFud\nAmzTGeVLC5W8vmW0ZA/GKWw85Taaz7OeGDZYrEQ7WVxX/ttL3ja6kCLGvOwagT42\nGHAUru1dibTnmgOe0eJlGMKUFFlbYTwOupTTqsNManCPbCAHBuOVCX2ope3FEHd6\nZ4nuOqaC5SLJXNcyJvSQ5213d882LG2y/JwyjmsBAoGAbOoyHuHRmWo88jrlbknA\nbYSaYS7YLXLCETHIUFZBpeW4K0VJfgzqATO+F+s7Own5RkEu5IujRaBzbcRiTwDH\nATpsZhmzwAXPvb+7M0sCGfWGMkZ+e62svQSLsu3Q9m+vu+/1dU6Xzlks5fcPVNUW\nKHMy+sYSUJmXJf30knXkkKU=\n-----END PRIVATE KEY-----\n",
+  "client_email": "liftbotsheets@liftbot-299519.iam.gserviceaccount.com",
+  "client_id": "110618731432402422026",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/liftbotsheets%40liftbot-299519.iam.gserviceaccount.com"
+}
