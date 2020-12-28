@@ -16,6 +16,9 @@ bot.
 """
 import pip
 pip.main(["install", "gspread"])
+pip.main(["install", "oauth2client"])
+pip.main(["install", "telegram"])
+pip.main(["install", "telegram.ext"])
 from datetime import date
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
