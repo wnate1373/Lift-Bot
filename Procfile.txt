@@ -1,1 +1,1 @@
-web: python gymBot.py
+web: pipenv run python gymBot.py
