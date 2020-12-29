@@ -1,1 +1,1 @@
-web: piping run python gymBot.py
+web: bundle exec rails server -p $PORT
