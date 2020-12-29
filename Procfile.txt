@@ -1,1 +1,1 @@
-worker: node gymBot.py
+web: python gymBot.py
