@@ -1,16 +1,12 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# This program is dedicated to the public domain under the CC0 license.
+
 
 """
-Simple Bot to reply to Telegram messages.
+Simple Bot to reply to log telegram message input and send to a google sheet.
 
 First, a few handler functions are defined. Then, those functions are passed to
 the Dispatcher and registered at their respective places.
-Then, the bot is started and runs until we press Ctrl-C on the command line.
 
 Usage:
-Basic Echobot example, repeats messages.
 Press Ctrl-C on the command line or send a signal to the process to stop the
 bot.
 """
@@ -80,8 +76,7 @@ pullMarkup = ReplyKeyboardMarkup(pull_reply_keyboard, one_time_keyboard=True)
 legMarkup = ReplyKeyboardMarkup(leg_reply_keyboard, one_time_keyboard=True)
 weightMarkup = ReplyKeyboardMarkup(weight_reply_keyboard, one_time_keyboard=True)
 reply2Markup = ReplyKeyboardMarkup(reply2_keyboard, one_time_keyboard=True)
-# Define a few command handlers. These usually take the two arguments update and
-# context. Error handlers also receive the raised TelegramError object in error.
+
 scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
 credentials = ServiceAccountCredentials.from_json_keyfile_name('liftbot-299519-2b24d73518a9.json', scope)
 gc = gspread.authorize(credentials)
@@ -116,6 +111,7 @@ def facts_to_str(user_data: Dict[str, str]) -> str:
 
 
 def start(update: Update, context: CallbackContext) -> int:
+    global todayFormatted
     update.message.reply_text("Hi! My name is liftBot. Welcome to your workout recording! Your data will be automatically logged into the linked spreadsheet under the correct date. What would you like to record?", reply_markup=reply2Markup)
     row1List = wks.col_values(1)
     sameDay = False
@@ -145,9 +141,8 @@ def weight_choice(update: Update, context: CallbackContext) -> int:
     
     
 def weight_information(update: Update, context: CallbackContext) -> int:
-    global todayFormatted
     Weight = update.message.text
-    weightToday = ('Great! Your weight for today', todayFormatted, ' in lbs is:')
+    weightToday = 'Great! Your weight for today, ' + todayFormatted + ', in lbs is:'
     update.message.reply_text(weightToday)
     update.message.reply_text(Weight)
     wks.update_cell(rowNum, 2, Weight)
@@ -904,8 +899,7 @@ def main():
     dp = updater.dispatcher
 
     # on different commands - answer in Telegram
-   # dp.add_handler(CommandHandler("record", record))
-   # dp.add_handler(CommandHandler("help", help))
+
     dp.add_handler(conv_handler)
     dp.add_handler(push_handler)
     dp.add_handler(pull_handler)
@@ -913,7 +907,7 @@ def main():
     dp.add_handler(weight_handler)
 
 
-   # dp.add_handler(MessageHandler(Filters.text, recordWeight))
+
 
 
 
