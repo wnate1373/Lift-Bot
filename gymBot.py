@@ -32,6 +32,7 @@ runCount2 = 0
 runCount3 = 0
 runCount4 = 0
 rowNum = 2
+todayFormatted = " "
 
 # Enable logging
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -144,8 +145,10 @@ def weight_choice(update: Update, context: CallbackContext) -> int:
     
     
 def weight_information(update: Update, context: CallbackContext) -> int:
+    global todayFormatted
     Weight = update.message.text
-    update.message.reply_text("Neat! Your weight for today (*Enter Day Here*) in lbs is:")
+    weightToday = ('Great! Your weight for today', todayFormatted, ' in lbs is:')
+    update.message.reply_text(weightToday)
     update.message.reply_text(Weight)
     wks.update_cell(rowNum, 2, Weight)
     update.message.reply_text("Select Record Again to overwrite the previous weight, or Done to exit!", reply_markup=weightMarkup)
